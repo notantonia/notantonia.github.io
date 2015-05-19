@@ -1,0 +1,47 @@
+body {
+    color: #333;
+    font-family: Vollkorn, serif;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+a {
+    color: #1761c6;
+    text-decoration-style: dashed;
+}
+
+a:hover {
+    color: #5588ce;
+}
+
+a:visited {
+    color: #4d17c6;
+}
+
+a:visited:hover {
+    color: #9b55ce;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 40em;
+}
+
+h2,
+ul {
+    margin: 0.2em auto;
+    padding: 0 auto;
+}
+
+li a {
+    font-size: 1.4em;
+}
+
+li p {
+    margin-top: 0.2em;
+}
