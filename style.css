@@ -8,25 +8,34 @@ body {
 h1 {
     font-family: Montserrat, sans-serif;
     font-weight: 700;
+    font-size: 3.5em;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: lowercase;
+    color: #888;
+    text-align: center;
+    margin: 0;
+}
+
+h4 {
+    margin-bottom: 0;
 }
 
 a {
     color: #1761c6;
     text-decoration-style: dashed;
+    transition: 0.15s all ease-in-out;
 }
 
 a:hover {
-    color: #5588ce;
-}
-
-a:visited {
-    color: #4d17c6;
-}
-
-a:visited:hover {
-    color: #9b55ce;
+    color: #55bbce;
 }
 
 .main {
