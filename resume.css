@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Roboto, "San Francisco", "Helvetica Neue", "Calibri", sans-serif;
+    line-height: 1.4em;
+    color: #222;
+}
+
+body {
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 50em;
+}
+
+h2 {
+    margin-top: 2em;
+    font-style: italic;
+    padding: 0;
+    color: #111;
+}
+
+a, a:link,  a:visited {
+    color: #328DAB;
+}
+
+a:active, a:focus, a:hover {
+    color: #7432AB;
+}
