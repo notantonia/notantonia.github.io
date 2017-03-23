@@ -14,9 +14,10 @@ body {
 
 h2 {
     margin-top: 2em;
-    font-style: italic;
     padding: 0;
     color: #111;
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid #ddd;
 }
 
 a, a:link,  a:visited {
