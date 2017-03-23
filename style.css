@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: "Open Sans", Roboto, "San Francisco", "Helvetica Neue", "Calibri", sans-serif;
 }
 
 body {
