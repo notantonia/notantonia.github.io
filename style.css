@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #0f101d;
 }
 
 h1 {
@@ -34,8 +35,11 @@ h2 {
 }
 
 a, a:link,  a:visited {
-    padding: 0 0.5em;
+    margin: 0 0.5em;
+    padding-bottom: 1px;
     color: #328DAB;
+    text-decoration: none;
+    border-bottom: 1px solid #328DAB;
 }
 
 a:active, a:focus, a:hover {

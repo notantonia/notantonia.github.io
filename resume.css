@@ -27,3 +27,7 @@ a, a:link,  a:visited {
 a:active, a:focus, a:hover {
     color: #7432AB;
 }
+
+a.noUnderline {
+    text-decoration: none;
+}
