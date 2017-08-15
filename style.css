@@ -125,60 +125,51 @@ h3 {
 /*second section*/
 #things {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 980px;
+}
+
+#things .section-container {
+    display: flex;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .item {
-    margin: 3em 0;
+    display: flex;
+    margin: 1em auto;
+    padding: 1em;
+    max-width: 400px;
+    background-color: #f4f6fb;
+
+    align-items: center;
 }
 
 /*because i can't be bothered to edit the gif*/
-.item {
-    padding: 12px;
-    border: 1px solid #cdd0da;
-    border-bottom-width: 5px;
-    border-radius: 3px;
-}
-
-.item:after {
-    display: block;
-    clear: both;
-    content: " ";
-}
-
 .item:first-child img {
     box-sizing: border-box;
     padding: 20px;
 }
 
 .item img {
-    display: inline-block;
+    float: left;
+    margin-right: 15px;
     width: 150px;
     height: 150px;
-    border: 3px solid #bcbec6;
     border-radius: 150px;
+    background-color: white;
 }
 
-.item:nth-child(odd) img {
-    float: left;
-    margin: 0 15px 15px 0;
-}
-
-.item:nth-child(even) img {
-    float: right;
-    margin: 0 0 15px 15px;
-}
-
-.item:nth-child(even) {
-    text-align: right;
+.item .description h3 {
+    margin-top: 0.5em;
 }
 
 .item .links {
-    margin-top: 1.7em;
+    margin: 1.7em 0;
 }
 
 .item .links a {
-    margin: 4em 0.5em;
+    margin-right: 15px;
     padding: 0.5em 0.8em;
     border-bottom: 4px solid #10546a;
     border-radius: 2px;
