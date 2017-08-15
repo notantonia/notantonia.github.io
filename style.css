@@ -56,11 +56,15 @@ h3 {
     color: #595963;
 }
 
-.next-section:hover p, .next-section:focus p, .next-section:active p {
+.next-section:hover p,
+.next-section:focus p,
+.next-section:active p {
     color: #2d2d38;
 }
 
-.next-section:hover, .next-section:focus, .next-section:active {
+.next-section:hover,
+.next-section:focus,
+.next-section:active {
     padding-bottom: 3px;
 }
 
