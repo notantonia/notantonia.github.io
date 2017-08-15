@@ -1,47 +1,188 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     font-family: "Open Sans", Roboto, "San Francisco", "Helvetica Neue", "Calibri", sans-serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #0f101d;
+    color: #3c3c45;
+    font-family: Roboto, "Helvetica Neue", "Calibri", sans-serif;
 }
 
+/*generic styling*/
 h1 {
-    font-family: Montserrat, sans-serif;
     margin: 0;
     padding: 0;
     padding-bottom: 0.3em;
+    font-family: Montserrat, sans-serif;
 }
 
 h2 {
-    font-family: "Roboto Light", Roboto, "Helvetica Neue Light", "Calibri Light", sans-serif;
-    font-style: italic;
-    font-weight: 200;
-    margin: 0;
+    margin: 0.5em;
     padding: 0;
+    font-weight: 200;
+    font-style: italic;
+    font-family: "Roboto Light", Roboto, "Helvetica Neue Light", "Calibri Light", sans-serif;
+}
+
+h3 {
+    margin-bottom: 0.7rem;
+    font-size: 1.4rem;
+}
+
+/*slightly less generic*/
+.section {
+    position: relative;
+    min-height: 100vh;
+}
+
+.section-container {
+    padding: 1em;
+}
+
+.next-section {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    padding: 3em 3em 0 3em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.next-section p {
+    margin: 0.5em 0;
+    color: #595963;
+}
+
+.next-section:hover p, .next-section:focus p, .next-section:active p {
+    color: #2d2d38;
+}
+
+.next-section:hover, .next-section:focus, .next-section:active {
+    padding-bottom: 3px;
+}
+
+.triangle-down, .triangle-up {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 9px 7px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.triangle-down {
+    border-top-color: #bcbec6;
+}
+
+.triangle-up {
+    border-bottom-color: #bcbec6;
+}
+
+.next-section:hover .triangle-down,
+.next-section:active .triangle-down,
+.next-section:focus .triangle-down {
+    border-top-color: #808390;
+}
+
+.next-section:hover .triangle-up,
+.next-section:active .triangle-up,
+.next-section:focus .triangle-up {
+    border-bottom-color: #808390;
+}
+
+/*first section*/
+#title-card{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    align-items: center;
+    justify-content: center;
 }
 
 #links {
+    display: flex;
     margin: 0.5em;
     padding: 0;
-    display: flex;
 }
 
-a, a:link,  a:visited {
+#links a, #links a:link,  #links a:visited {
     margin: 0 0.5em;
     padding-bottom: 1px;
+    border-bottom: 1px solid #328DAB;
     color: #328DAB;
     text-decoration: none;
-    border-bottom: 1px solid #328DAB;
 }
 
-a:active, a:focus, a:hover {
+#links a:active, #links a:focus, #links a:hover {
+    border-bottom: 1px solid #7432AB;
     color: #7432AB;
+}
+
+/*second section*/
+#things {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.item {
+    margin: 3em 0;
+}
+
+/*because i can't be bothered to edit the gif*/
+.item {
+    padding: 12px;
+    border: 1px solid #cdd0da;
+    border-bottom-width: 5px;
+    border-radius: 3px;
+}
+
+.item:after {
+    display: block;
+    clear: both;
+    content: " ";
+}
+
+.item:first-child img {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.item img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #bcbec6;
+    border-radius: 150px;
+}
+
+.item:nth-child(odd) img {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.item:nth-child(even) img {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+.item:nth-child(even) {
+    text-align: right;
+}
+
+.item .links {
+    margin-top: 1.7em;
+}
+
+.item .links a {
+    margin: 4em 0.5em;
+    padding: 0.5em 0.8em;
+    border-bottom: 4px solid #10546a;
+    border-radius: 2px;
+    background-color: #328DAB;
+    color: white;
+    text-decoration: none;
 }

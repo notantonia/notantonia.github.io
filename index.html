@@ -7,12 +7,68 @@
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Antonia Siu</h1>
-    <h2>computer science undergrad @ Oxford</h2>
+    <div id="top" class="section">
+      <div id="title-card">
+        <h1>Antonia Siu</h1>
+        <h2>computer science undergrad @ oxford</h2>
 
-    <div id="links">
-      <a href="https://github.com/notantonia">github</a>
-      <a href="./resume.html">resumé</a>
+        <div id="links">
+          <a href="https://github.com/notantonia">github</a>
+          <a href="https://www.linkedin.com/in/antonia-siu-3b2778140/">linkedin</a>
+          <a href="./resume.html">resumé</a>
+        </div>
+      </div>
+
+      <div class="next-section moveTo-trigger" data-target="#things">
+        <p>see what i've done</p>
+        <div class="triangle-down"></div>
+      </div>
     </div>
+
+    <div id="things" class="section">
+      <div class="section-container">
+        <div class="item">
+          <img src="./assets/syn.gif" alt="">
+          <div class="description">
+            <h3>Synaesthesia Text</h3>
+            <p class="blurb">
+              Grapheme-Color synaesthesia is when a person experiences color associated with symbols, letters or words. This site allows you to see what that might be like.
+            </p>
+            <div class="links">
+              <a href="https://github.com/notantonia/synaesthesia-text">github</a>
+              <a href="http://antoniasiu.co.uk/synaesthesia-text/">demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="./assets/circles.gif" alt="">
+          <div class="description">
+            <h3>Circles</h3>
+            <p class="blurb">
+              An online multiplayer game where you fight to be the last one surviving.
+            </p>
+            <div class="links">
+              <a href="https://github.com/MMJZ/circles">github</a>
+              <a href="http://circles.antoniasiu.co.uk/">demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="next-section moveTo-trigger" data-target="#top">
+        <div class="triangle-up"></div>
+        <p>back to top</p>
+      </div>
+    </div>
+
+    <script src="assets/moveTo.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      const moveTo = new MoveTo();
+      const triggers = document.getElementsByClassName('moveTo-trigger')
+      for (let i = 0; i < triggers.length; i++) {
+        moveTo.registerTrigger(triggers[i]);
+      }
+    </script>
   </body>
 </html>
