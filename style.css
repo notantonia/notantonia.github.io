@@ -97,6 +97,27 @@ h3 {
     border-bottom-color: #808390;
 }
 
+.github:before {
+    display: inline-block;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    background-image: url('./assets/github.svg');
+    background-size: contain;
+    content: "";
+}
+
+.demo::before {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 6px 8px;
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: black;
+    content: "";
+}
+
 /*first section*/
 #title-card{
     display: flex;
@@ -129,24 +150,14 @@ h3 {
 /*second section*/
 #things {
     margin: 0 auto;
-    max-width: 980px;
 }
 
 #things .section-container {
-    display: flex;
-
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .item {
-    display: flex;
-    margin: 1em auto;
-    padding: 1em;
-    max-width: 400px;
-    background-color: #f4f6fb;
-
-    align-items: center;
+    margin: 3em auto 6em auto;
+    max-width: 700px;
 }
 
 /*because i can't be bothered to edit the gif*/
@@ -157,40 +168,55 @@ h3 {
 
 .item img {
     float: left;
-    margin-right: 15px;
+    margin: -30px 1em 0.5em 1em;
     width: 150px;
     height: 150px;
+    border: 1px solid #328DAB;
     border-radius: 150px;
     background-color: white;
 }
 
-.item .description h3 {
-    margin-top: 0.5em;
+.item h3 {
+
+}
+
+.item .item-box {
+    border: 1px solid #328DAB;
+    border-radius: 3px;
+}
+
+.item .description {
+    padding: 1em;
 }
 
 .item .links {
-    margin: 1em 0;
     display: flex;
+    width: 100%;
+    border-top: 1px solid #328DAB;
+
+    justify-content: space-around;
 }
 
 .item .links a {
-    margin-right: 15px;
-    margin-top: 4px;
-    padding: 0.5em 0.8em;
-    border-bottom: 4px solid #10546a;
-    border-radius: 2px;
-    background-color: #328DAB;
-    color: white;
+    display: flex;
+    padding: 1em;
+    border-right: 1px solid #328DAB;
+    background-color: #d2e7ee;
+    color: #3c3c45;
+    text-align: center;
     text-decoration: none;
+
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.item .links a:last-child {
+    border: none;
 }
 
 .item .links a:hover,
-.item .links a:focus {
-    border-bottom-width: 8px;
-    margin-top: 0;
-}
-
+.item .links a:focus,
 .item .links a:active {
-    border-bottom-width: 2px;
-    margin-top: 6px;
+    background-color: #74b1c6;
 }
