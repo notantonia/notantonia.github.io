@@ -41,6 +41,10 @@ h3 {
     padding: 1em;
 }
 
+.moveTo-trigger {
+    cursor: pointer;
+}
+
 .next-section {
     position: absolute;
     right: 0;
@@ -48,7 +52,6 @@ h3 {
     left: 0;
     padding: 3em 3em 0 3em;
     text-align: center;
-    cursor: pointer;
 }
 
 .next-section p {
