@@ -190,6 +190,7 @@ h3 {
     margin: 0;
     padding: 1em;
     line-height: 1.45em;
+    min-height: 70px;
 }
 
 .item .links {
