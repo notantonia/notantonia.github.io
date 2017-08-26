@@ -205,7 +205,6 @@ h3 {
     display: flex;
     padding: 0.7em;
     border-right: 1px solid #328DAB;
-    background-color: #d2e7ee;
     color: #3c3c45;
     text-align: center;
     text-decoration: none;
@@ -222,5 +221,5 @@ h3 {
 .item .links a:hover,
 .item .links a:focus,
 .item .links a:active {
-    background-color: #74b1c6;
+    background-color: #d2e7ee;
 }
