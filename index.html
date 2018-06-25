@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- top bit -->
-    <div id="top" class="section moveTo-trigger" data-target="#things">
+    <div id="top">
       <div id="title-card">
         <h1 class="my-name">Antonia Siu</h1>
         <h2 class="subtitle">computer science undergrad @ oxford</h2>
@@ -16,73 +16,14 @@
         <div id="links">
           <a href="https://github.com/notantonia">github</a>
           <a href="https://www.linkedin.com/in/antonia-siu-3b2778140/">linkedin</a>
-          <a href="./resume.html">resumé</a>
         </div>
       </div>
-
-      <div class="next-section moveTo-trigger" data-target="#things">
-        <p>my projects</p>
-        <div class="triangle-down"></div>
-      </div>
-    </div>
-
-    <div id="things" class="section">
-      <div class="section-container">
-
-        <!-- synaesthesia text -->
-        <div class="item">
-          <img src="./assets/syn.gif" alt="">
-          <h3>Synaesthesia Text</h3>
-          <div class="item-box">
-            <p class="description">
-              Grapheme-Colour synaesthesia is when a person experiences colour associated with symbols, letters or words. This site allows you to see what that might be like.
-            </p>
-            <div class="links">
-              <a class="github" href="https://github.com/notantonia/synaesthesia-text">github</a>
-              <a class="demo" href="http://github.antoniasiu.co.uk/synaesthesia-text/">demo</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- circles -->
-        <div class="item">
-          <img src="./assets/circles.gif" alt="">
-          <h3>Circles</h3>
-          <div class="item-box">
-            <p class="description">
-              An online multiplayer game where you fight to be the last one surviving.
-            </p>
-            <div class="links">
-              <a class="github" href="https://github.com/MMJZ/circles">github</a>
-              <!-- <a class="demo" href="http://circles.antoniasiu.co.uk/">demo</a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="next-section moveTo-trigger" data-target="#top">
-        <div class="triangle-up"></div>
-        <p>back to top</p>
-      </div>
-    </div>
-
-    <!-- moveTo setup -->
-    <script src="assets/moveTo.min.js" charset="utf-8"></script>
-    <script type="text/javascript">
-      const moveTo = new MoveTo();
-      const triggers = document.getElementsByClassName('moveTo-trigger')
-      for (let i = 0; i < triggers.length; i++) {
-        moveTo.registerTrigger(triggers[i]);
-      }
-    </script>
 
     <!-- ayy self promotion -->
     <script type="text/javascript">
       console.log("hello :D");
-      console.log("welcome to the developer console");
-      console.log("if you're looking for an intern from the UK for Summer 2018, hit me up at >> hireme@antoniasiu.co.uk <<");
-      console.log("if you're looking for a friend, follow me on twitter @f_ant_astic");
-      console.log("have a good day!");
+      console.log(">> hireme@antoniasiu.co.uk <<");
+      console.log("twitter: @ant_ebooks");
     </script>
   </body>
 </html>

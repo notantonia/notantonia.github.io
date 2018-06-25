@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    color: #3c3c45;
+    color: #878f9c;
     font-family: Roboto, "Helvetica Neue", "Calibri", sans-serif;
 }
 
@@ -119,8 +119,8 @@ h3 {
 .my-name {
     margin: 0;
     padding: 0;
-    color: #222;
-    text-shadow: 5px 5px 0 #328DAB;
+    color: rgba(255, 50,100, 0.7);
+    text-shadow: 7px 7px 0 rgba(0, 192, 255, 0.7);
     font-size: 5em;
     font-family: Montserrat, sans-serif;
 }
@@ -140,14 +140,14 @@ h3 {
 }
 
 #links a, #links a:link,  #links a:visited {
-    margin: 0 0.5em;
-    padding: 0.3em 0.5em 0.5em 0.5em;
-    color: #328DAB;
+    margin: 0 0.3em;
+    padding: 0.3em 0.7em 0.5em 0.7em;
+    color: #16A9DA;
     text-decoration: underline;
 }
 
 #links a:active, #links a:focus, #links a:hover {
-    background-color: #d2e7ee;
+    background-color: #99d0d033;
 }
 
 /*second section*/
